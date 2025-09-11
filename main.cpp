@@ -6,8 +6,8 @@ void update() {
     tick++;
 }
 
-int main() {
-    std::cout << "Hello World!" << std::endl;
+int main(int argc, char** argv) {
+    std::cout << "Hello World!" << " " << argv[2] << std::endl;
     for (int i = 0; i < 10; i++) {
         update();
     }
