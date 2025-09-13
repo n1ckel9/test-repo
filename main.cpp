@@ -1,5 +1,5 @@
 #include<iostream>
-#include<sec.cpp>
+#include"sec.h"
 
 int tick = 0;
 
@@ -8,8 +8,8 @@ void update() {
 }
 
 int main(int argc, char** argv) {
-    if (argc >= 1) {
-        std::cout << "Hello World!" << " " << argv[2] << std::endl;
+    if (argc > 1) {
+        std::cout << "Hello World!" << " " << argv[1] << std::endl;
     }
 
     for (int i = 0; i < 10; i++) {
